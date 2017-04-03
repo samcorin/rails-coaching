@@ -7,8 +7,19 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <%= yield %>
+  <!-- <div class="header">
+    <%= render "layouts/header" %>
+  </div> -->
+    <div class="wrapper">
+        <div class="inner-wrapper">
+
+          <%= yield %>
+
+        </div>
+    </div>
+    <!-- <div class="footer">
+      <%= render "layouts/footer" %>
+    </div> -->
   </body>
 </html>
